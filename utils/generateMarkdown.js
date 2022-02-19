@@ -1,10 +1,25 @@
-# readme
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {}
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {}
+
+// TODO: Create a function to generate markdown for README
+const generateMarkdown = (userInput) => {
+  return `
+  # ${userInput.title}
 
   Simple overview of use/purpose.
   
   ## Description
   
-  readme file template 
+  ${userInput.description}
   
   ## Getting Started
   
@@ -55,4 +70,7 @@
   * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
   * [dbader](https://github.com/dbader/readme-template)
   * [zenorocha](https://gist.github.com/zenorocha/4526327)
-  * [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+  * [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)`;
+};
+
+module.exports = generateMarkdown;
